@@ -1,0 +1,518 @@
+/* importei uma fonte (poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* declarei as variaveis da minha página (cores e fonte) */
+:root{
+    
+    --textp: #2E2E3A;
+    --texts: #6C6C80;
+    --hovercta: #E85C90;
+    --cta: #FF6FA5;
+    --alternarseçoes:#F7F7FB;
+    --fundoscards:#E9E6FF;
+    --destaqhoverbotao:#F4A6C1;
+    --destaqiconesdetalhes:#8B7CF6; 
+    --fontep: "Poppins", sans-serif;
+
+}
+
+/* configurações padrões do meu site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  var(--fontep);
+    text-decoration: none;
+   
+}
+
+/* frame 1 */
+
+.menu{
+    display: flex;
+    padding: 0.9vw;
+    background-color: var(--fundoscards);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8.75vw;
+
+}
+
+.menu img, footer img{
+
+    width: 13vw;
+     
+}
+
+.opmenu{
+
+    display: flex;
+    gap: 3.713vw;
+
+}
+
+.opçoes{
+
+    color: var(--textp);
+    font-size: 1.8vw;
+}
+
+.opçoes:hover{
+    color: var(--destaqhoverbotao);
+}
+
+.cta{
+
+    background-color: var(--cta);
+    width:20vw;
+    border-radius: 1vw;
+    color: #FFFFFF;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.cta:hover{
+    background-color: var(--hovercta);
+}
+
+
+.first{
+    padding-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    gap: 2.2vw;
+    background-color: var(--alternarseçoes);
+    
+}
+
+.hero img{
+    
+    width: 30vw;
+    margin-left: 7.2vw;
+    margin-top: 3.542vw;
+    border-radius: 1.25vw;
+    margin-bottom: 12vw;
+    transition: 1s ease;
+
+}
+
+.hero img:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0px 3px 20px #fcc3d8;
+ 
+
+}
+
+.herotext{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-right: 9vw;
+
+}
+
+.herotext h3{
+
+    font-size: 3.4vw;
+    font-weight: normal;
+
+}
+
+.herotext strong{
+    color: var(--cta);
+    transition: 1s ease;
+}
+
+.herotext strong:hover{
+    color: #fb2c78;
+   
+}
+
+
+.herotext p{
+    font-size: 1.2vw;
+    width: 33.3vw;
+    
+}
+
+.herotext a{
+
+    margin-top: 2.775vw;
+    width:  15.4vw;
+    text-align: center;
+    
+}
+
+/* frame 2 */
+
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 7.014vw;;
+    
+    
+
+}
+
+.beneficios h3{
+
+    width: 50vw;
+    font-size: 3.3vw;
+    font-weight: 300;
+    margin-top: 15.486vw;
+    color: #2E2E3A;
+    
+}
+
+.beneficios strong{
+    color: var(--destaqiconesdetalhes);
+    
+}
+
+.beneficios strong:hover{
+    color:blueviolet;
+    
+}
+
+.beneficioshead{
+    text-align: center;
+    gap: 2.778vw;
+}
+
+.beneficios, .cards p{
+    color: var(--texts);
+    font-size: 1.042vw;
+    
+}
+
+.cards div:hover{
+    color: #2E2E3A;
+    transform: translateY(-1vw);
+   box-shadow: 0px 10px 50px #b2ace1;
+   
+   
+}
+
+.beneficios a{
+
+  font-size: 1.4vw;
+  width: 28vw;
+  text-align: center;
+  
+    
+}
+
+.cards{
+    display: flex;
+    gap: 4.514vw;
+    text-align: center;
+    
+    
+}
+
+.cards div{
+   
+    background-color: var(--fundoscards);
+    width: 16.875vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.694vw;
+    height: 13.125vw;
+    transition: 1s ease;
+       
+}
+
+
+
+.cards img{
+    width: 3.194vw;
+    align-self: center;
+    
+        
+}
+
+.beneficios a{
+    margin-bottom: 4vw;
+}
+
+/* frame 3 */
+
+.serviços {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 3.5vw;
+    height: 70vw;
+   
+    background: var(--alternarseçoes);
+    
+
+}
+
+.serviços h3,strong{
+    font-size: 3.333vw;
+    font-weight: 400;
+    
+}
+
+.serviços p{
+    color: var(--texts);
+    justify-self: center;
+    font-size: 1.042vw;
+}
+
+.serviços strong:hover{
+    color: #8B7CF6;
+}
+
+.serviços .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.serviços .cards div{
+   
+    width: 21.111vw;
+    height: 14.792vw;
+    
+}
+
+.serviços a{
+    width: 16vw;
+}
+
+/* frame 4 */
+
+.four{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+
+    
+}
+
+.four img{
+    
+    width: 31vw;
+    margin-right: 5vw;
+    margin-top: 3.542vw;
+    border-radius: 1.25vw;
+    margin-bottom: 7vw;
+    transition: 1s ease;
+
+}
+
+.four img:hover{
+
+    transform: scale(1.05);
+    box-shadow:0px 3px 20px 1px rgb(213, 167, 255);
+ 
+
+}
+
+.sobretext{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    
+
+}
+
+.sobretext h3{
+
+    font-size: 3.4vw;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.sobretext strong, .sobretext li{
+    color: var(--destaqiconesdetalhes);
+    transition: 1s ease;
+}
+
+.sobretext strong:hover,.sobretext li:hover{
+    color: #fb2c78;
+   
+}
+
+
+.sobretext p{
+    font-size: 1.2vw;
+    width: 33.3vw;
+    
+}
+
+.sobretext li{
+    font-size: 1.4vw
+}
+
+.sobretext a{
+
+    margin-top: 2.775vw;
+    width:  22.4vw;
+    text-align: center;
+    
+}
+
+/* frame 5 */
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alternarseçoes);
+    gap: 7.014vw;;
+    
+    
+
+}
+
+.depoimentos h3{
+
+    width: 70vw;
+    font-size: 3.3vw;
+    font-weight: 300;
+    margin-top: 15.486vw;
+    color: #2E2E3A;
+    
+}
+
+.depoimentos strong{
+    color: var(--destaqiconesdetalhes);
+    
+}
+
+.depoimentos strong:hover{
+    color:blueviolet;
+    
+}
+
+.depoimentoshead{
+    text-align: center;
+    gap: 2.778vw;
+}
+
+.depoimentos, .cardss p{
+    color: var(--texts);
+    font-size: 1.042vw;
+    
+}
+
+.cardss div:hover{
+    color: #2E2E3A;
+    transform: translateY(-1vw);
+   box-shadow: 0px 10px 50px #b2ace1;
+   
+   
+}
+
+.depoimentos a{
+
+  font-size: 1.4vw;
+  width: 28vw;
+  text-align: center;
+  
+    
+}
+
+.cardss{
+    display: flex;
+    gap: 4.514vw;
+    text-align: center;
+   
+    
+    
+}
+
+.depoimentos .cardss div{
+   
+    background-color: var(--fundoscards);
+    width: 16.875vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.694vw;
+    height: 13.125vw;
+    transition: 1s ease;
+    gap: 1vw;
+       
+}
+
+.depoimentos h4, h5{
+    color: var(--textp);
+}
+
+.depoimentos h5, .depoimentos strong{
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+.depoimentos a{
+    margin-bottom: 6vw;
+}
+
+.dps{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+/* frame 6 */
+
+
+footer{
+    background-color: var(--fundoscards);
+    justify-items: center;
+   justify-content: space-around;
+}
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+   gap: 16vw;
+    
+}
+
+a img{
+    width: 2vw;
+
+}
+
+.contato p{
+    color: #6C6C80;
+    
+}
+
+.marcatxt {
+    display: flex;
+}
+
+.navegação{
+    display: flex;
+    flex-direction: column;
+    font-size: 0,7vw;
+    margin-top: 1vw;
+}
